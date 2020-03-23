@@ -22,62 +22,62 @@ I would greatly appreciate any suggestions for snippets that aren't yet availabl
 
 
 #### React Import Snippet List
- - **eimr:** _import ---- from 'react';_
- - **enimr:** _import { ---- } from 'react'_
- - **imr:** _import React from 'react';_
- - **imrn:** _import React, { ---- } from 'react';_
+ - **eimr:** `import ---- from 'react';`
+ - **enimr:** `import { ---- } from 'react'`
+ - **imr:** `import React from 'react';`
+ - **imrn:** `import React, { ---- } from 'react';`
 
 #### React Component Snippet List
- - **rcc:** _const ---- = React.createClass({ ... });_
- - **rcerc:** _class ---- extends React.Component { ... }_
- - **rcec:** _class ---- extends Component { ... }_
- - **rfc:** _const ---- = (----) => { ... }_
- - **rfcf:** _const ---- = function(----) { ... }_
+ - **rcc:** `const ---- = React.createClass({ ... });`
+ - **rcerc:** `class ---- extends React.Component { ... }`
+ - **rcec:** `class ---- extends Component { ... }`
+ - **rfc:** `const ---- = (----) => { ... }`
+ - **rfcf:** `const ---- = function(----) { ... }`
 
 #### React Lifecycle Method Snippet List
- - **rcon:** _creates a constructor_
- - **rcons:** _creates a constructor with an empty state object_
- - **rcmd:** _componentDidMount() { ---- }_
- - **rcdu:** _componentDidUpdate(----) { ---- }_
- - **rcwu:** _componentWillUnmount() { ---- }_
+ - **rcon:** `creates a constructor`
+ - **rcons:** `creates a constructor with an empty state object`
+ - **rcmd:** `componentDidMount() { ---- }`
+ - **rcdu:** `componentDidUpdate(----) { ---- }`
+ - **rcwu:** `componentWillUnmount() { ---- }`
 
 #### React Hooks Snippet List
- - **rhs:** _const [----, ----] = useState(----);_
- - **rhr:** _const [----, ----] = useReducer(----, { ---- });_
- - **rhe:** _useEffect(() => { ---- }, ----);_
+ - **rhs:** `const [----, ----] = useState(----);`
+ - **rhr:** `const [----, ----] = useReducer(----, { ---- });`
+ - **rhe:** `useEffect(() => { ---- }, ----);`
 
 #### React Native Snippet List
- - **eimrn:** _import ---- from 'react-native';_
- - **nimrn:** _import { ---- } from 'react-native';_
- - **rncss:** _const styles = StyleSheet.create({ ---- });_
- - **rnnnav:** _navigation.navigate('----');_
- - **rnnpush:** _navigation.push('----');_
- - **rnngb:** _navigation.goBack();_
- - **rnnpop:** _navigation.pop(----);_
- - **rnnptt:** _navigation.popToTop();_
- - **rnnrep:** _navigation.replace(----);_
- - **rnnjt:** _navigation.jumpTo('----');_
- - **rnnod:** _navigation.openDrawer();_
- - **rnncd:** _navigation.closeDrawer();_
- - **rnntd:** _navigation.toggleDrawer();_
- - **rnv:** _\<View ---- >----\</View>_
- - **rnvsc:** _\<View ---- />_
- - **rnt:** _\<Text ---- >----\</Text>_
- - **rnimg:** _\<Image source={----} ---- />_
- - **rnti:** _\<TextInput onChangeText={----} value={----} ---- />_
- - **rnsv:** _\<ScrollView ---- >----\</ScrollView>_
- - **rnbtn:** _\<Button onPress={----} ---- />_
- - **rnto:** _\<TouchableOpacity ---- >----\</TouchableOpacity>_
- - **rnpick:** _\<Picker selectedValue={----} onValueChange={----} ---- >----\</Picker>_
- - **rnpitem:** _\<Picker.Item label=---- value=---- />_
- - **rnsw:** _\<Switch value={----} onValueChange={----} ---- />_
- - **rnfl:** _\<FlatList keyExtractor={----} data={----} renderItem={----} />_
- - **rnsl:** _\<SectionList sections={----} keyExtractor={----} renderItem={----} renderSectionHeader={----} />_
+ - **eimrn:** `import ---- from 'react-native';`
+ - **nimrn:** `import { ---- } from 'react-native';`
+ - **rncss:** `const styles = StyleSheet.create({ ---- });`
+ - **rnnnav:** `navigation.navigate('----');`
+ - **rnnpush:** `navigation.push('----');`
+ - **rnngb:** `navigation.goBack();`
+ - **rnnpop:** `navigation.pop(----);`
+ - **rnnptt:** `navigation.popToTop();`
+ - **rnnrep:** `navigation.replace(----);`
+ - **rnnjt:** `navigation.jumpTo('----');`
+ - **rnnod:** `navigation.openDrawer();`
+ - **rnncd:** `navigation.closeDrawer();`
+ - **rnntd:** `navigation.toggleDrawer();`
+ - **rnv:** `<View ---- >----</View>`
+ - **rnvsc:** `<View ---- />`
+ - **rnt:** `<Text ---- >----</Text>`
+ - **rnimg:** `<Image source={----} ---- />`
+ - **rnti:** `<TextInput onChangeText={----} value={----} ---- />`
+ - **rnsv:** `<ScrollView ---- >----</ScrollView>`
+ - **rnbtn:** `<Button onPress={----} ---- />`
+ - **rnto:** `<TouchableOpacity ---- >----</TouchableOpacity>`
+ - **rnpick:** `<Picker selectedValue={----} onValueChange={----} ---- >----</Picker>`
+ - **rnpitem:** `<Picker.Item label=---- value=---- />`
+ - **rnsw:** `<Switch value={----} onValueChange={----} ---- />`
+ - **rnfl:** `<FlatList keyExtractor={----} data={----} renderItem={----} />`
+ - **rnsl:** `<SectionList sections={----} keyExtractor={----} renderItem={----} renderSectionHeader={----} />`
 
 #### Misc Snippet List
- - **eim:** _import ---- from '----';_
- - **log:** _console.log(----);_
- - **logt:** _console.log('----');_
- - **logm:** _console.log('----', ----);_
- - **exdef:** _export default ----;_
- - **modexp:** _module.exports = ----;_
+ - **eim:** `import ---- from '----';`
+ - **log:** `console.log(----);`
+ - **logt:** `console.log('----');`
+ - **logm:** `console.log('----', ----);`
+ - **exdef:** `export default ----;`
+ - **modexp:** `module.exports = ----;`

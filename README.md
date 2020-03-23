@@ -1,5 +1,6 @@
+React & React Native Snippets![Build Status](https://travis-ci.org/pranavchary/atom-react-rnative-snippets.svg?branch=master)](https://travis-ci.org/pranavchary/atom-react-rnative-snippets)
+----
 
-# React & React Native Snippets
 An Atom plugin that turns shorthand text into code that is commonly used in React & React Native development. It also contains a few general-purpose JavaScript snippets as well.
 
 ## Description

@@ -1,9 +1,10 @@
 {
   "name": "react-rnative-snippets",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "React and React Native snippets for Atom",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranavchary/react-rnative-snippets.git"
   },
   "keywords": [
     "react",

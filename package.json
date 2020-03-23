@@ -1,6 +1,6 @@
 {
   "name": "react-rnative-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React and React Native snippets for Atom",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "snippets"
   ],
   "engines": {
-    "atom" : ">=1.45.0"
+    "atom": ">=1.45.0"
   },
   "author": "Pranav Chary",
   "license": "MIT"

@@ -1,0 +1,21 @@
+{
+  "name": "react-rnative-snippets",
+  "version": "0.1.0",
+  "description": "React and React Native snippets for Atom",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "reactnative",
+    "react-native",
+    "javascript",
+    "es6",
+    "snippets"
+  ],
+  "engines": {
+    "atom" : ">=1.45.0"
+  },
+  "author": "Pranav Chary",
+  "license": "MIT"
+}

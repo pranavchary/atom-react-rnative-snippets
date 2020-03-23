@@ -1,0 +1,202 @@
+".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
+  # React Import snippets
+  "React: empty import":
+    "prefix": "eimr",
+    "body": "import ${1} from 'react';\n"
+
+  "React: empty named import from 'react'":
+    "prefix": "enimr",
+    "body": "import { ${1} } from 'react';\n"
+
+  "React: import React":
+    "prefix": "imr",
+    "body": "import React from 'react';\n"
+
+  "React: import React & empty named":
+    "prefix": "imrn",
+    "body": "import React, { ${1:Component} } from 'react';\n"
+
+  # React Component snippets
+  "React: createClass skeleton":
+    "prefix": "rcc",
+    "body": 'const ${1} = React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${2}\n\t\t);\n\t}\n});\n\nexport default ${1};\n'
+
+  "React: React.Component skeleton":
+    "prefix": "rcerc",
+    "body": 'class ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2}\n\t\t);\n\t}\n}\n\nexport default ${1};\n'
+
+  "React: Component skeleton":
+    "prefix": "rcec",
+    "body": 'class ${1} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2}\n\t\t);\n\t}\n}\n\nexport default ${1};\n'
+
+  "React: functional component skeleton":
+    "prefix": "rfc",
+    "body": 'const ${1} = (${2:props}) => {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
+
+  "React: functional component skeleton (keyword)":
+    "prefix": "rfcf",
+    "body": 'const ${1} = function(${2:props}) {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
+
+  # Lifecycle Methods snippets
+  "React: empty constructor":
+    "prefix": "rcon",
+    "body": 'constuctor(props) {\n\tsuper(props);\n\t${1}\n}\n'
+
+  "React: constructor with empty state":
+    "prefix": "rcons",
+    "body": 'constuctor(props) {\n\tsuper(props);\n\tthis.state = {\n\t\t${1}\n\t}\n}\n'
+
+  "React: componentDidMount()":
+    "prefix": "rcdm",
+    "body": 'componentDidMount(){\n\t${1}\n}\n'
+
+  "React: componentDidUpdate()":
+    "prefix": "rcdu",
+    "body": 'componentDidUpdate(${1:prevProps, prevState}) {\n\t${2}\n}\n'
+
+  "React: componentWillUnmount()":
+    "prefix": "rcwu",
+    "body": 'componentWillUnmount() {\n\t${1}\n}\n'
+
+  # React Hooks snippets
+  "React: state hook":
+    "prefix": "rhs",
+    "body": 'const[${1}, ${2}] = useState(${3});\n'
+
+  "React: reducer hook":
+    "prefix": "rhr",
+    "body": 'const[${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, \n\t${4:{}}\n);\n'
+
+  "React: effect hook":
+    "prefix": "rhe",
+    "body": 'useEffect(() => {\n\t${2}\n}, ${1:[]});\n'
+
+  # React Native snippets
+  "React Native: empty import":
+    "prefix": "eimrn",
+    "body": "import ${1} from 'react-native';\n"
+
+  "React Native: View, Text, StyleSheet import":
+    "prefix": "nimrn",
+    "body": "import { View, Text, StyleSheet } from 'react-native';\n"
+
+  "React Native: create StyleSheet":
+    "prefix": "rncss",
+    "body": "const styles = StyleSheet.create({\n\t${1}\n});\n"
+
+  "React Native: navigation - navigate":
+    "prefix": "rnnnav",
+    "body": "props.navigation.navigate(${1:routeName},${2: params});\n"
+
+  "React Native: navigation - go back":
+    "prefix": "rnngb",
+    "body": "props.navigation.goBack();\n"
+
+  "React Native: navigation - push":
+    "prefix": "rnnpush",
+    "body": "props.navigation.push(${1:routeName},${2: params});\n"
+
+  "React Native: navigation - pop":
+    "prefix": "rnnpop",
+    "body": "props.navigation.pop(${1});\n"
+
+  "React Native: navigation - pop to top":
+    "prefix": "rnnptt",
+    "body": "props.navigation.popToTop();\n"
+
+  "React Native: navigation - replace":
+    "prefix": "rnnrep",
+    "body": "props.navigation.replace(${1:routeName},${2: params});\n"
+
+  "React Native: navigation - jumpTo":
+    "prefix": "rnnjt",
+    "body": "props.navigation.jumpTo(${1:routeName},${2: params});\n"
+
+  "React Native: navigation - open drawer":
+    "prefix": "rnnd",
+    "body": "props.navigation.openDrawer();\n"
+
+  "React Native: navigation - close drawer":
+    "prefix": "rnnd",
+    "body": "props.navigation.closeDrawer();\n"
+
+  "React Native: navigation - toggle drawer":
+    "prefix": "rnnd",
+    "body": "props.navigation.toggleDrawer();\n"
+
+  "React Native: View":
+    "prefix": "rnv",
+    "body": "<View ${1:props}>\n\t${2}\n</View>\n"
+
+  "React Native: View (self-closing)":
+    "prefix": "rnvsc",
+    "body": "<View ${1:props} />\n"
+
+  "React Native: Text":
+    "prefix": "rnt",
+    "body": "<Text ${1:props}>${2}</Text>\n"
+
+  "React Native: Image":
+    "prefix": "rnimg",
+    "body": "<Image ${2:props} source=${1} />\n"
+
+  "React Native: TextInput":
+    "prefix": "rnti",
+    "body": "<TextInput value=${1} onChangeText=${2} ${3:props} />\n"
+
+  "React Native: ScrollView":
+    "prefix": "rnsv",
+    "body": "<ScrollView ${1:props}>\n\t${2}\n</ScrollView>\n"
+
+  "React Native: Button":
+    "prefix": "rnbtn",
+    "body": "<Button title=${1} onPress=${2} ${3:props} />\n"
+
+  "React Native: TouchableOpacity":
+    "prefix": "rnto",
+    "body": "<TouchableOpacity ${1:props}>\n\t${2}\n</TouchableOpacity>\n"
+
+  "React Native: Picker":
+    "prefix": "rnpick",
+    "body": "<Picker selectedValue={${1}} onValueChange={${2}} ${3:props}>\n\t${4}\n</Picker>\n"
+
+  "React Native: Picker.Item":
+    "prefix": "rnpitem",
+    "body": "<Picker.Item label=${1} value=${2} />\n"
+
+  "React Native: Switch":
+    "prefix": "rnsw",
+    "body": "<Switch value={${1}} onValueChange={${2}} ${3:props} />\n"
+
+  "React Native: FlatList":
+    "prefix": "rnfl",
+    "body": "<FlatList\n\tkeyExtractor={${1}}\n\tdata={${2}}\n\trenderItem={${3}}\n\t${4:props}\n/>\n"
+
+  "React Native: SectionList":
+    "prefix": "rnsl",
+    "body": "<SectionList\n\tsections={${1}}\n\tkeyExtractor={${2}}\n\trenderItem={${3}}\n\trenderSectionHeader={${4}}\n\t${5:props}\n/>\n"
+
+  # Misc Snippets
+  "JavaScript: empty import":
+    "prefix": "eim",
+    "body": "import ${1} from '${2}';\n"
+
+  "JavaScript: console log":
+    "prefix": "log",
+    "body": "console.log(${1});\n"
+
+  "JavaScript: console log (text)":
+    "prefix": "logt",
+    "body": "console.log('${1}');\n"
+
+  "JavaScript: console log (multi)":
+    "prefix": "logm",
+    "body": "console.log('${1}', ${2});\n"
+
+  "JavaScript: export default":
+    "prefix": "exdef",
+    "body": "export default ${1};\n"
+
+  "JavaScript: export module":
+    "prefix": "modexp",
+    "body": "module.exports = ${1};\n"

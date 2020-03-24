@@ -5,7 +5,7 @@ v0.1.0
 
 Initial commit
 
-_v0.1.0 through 0.1.7 were changes to solve the issue of being unable to view package settings & README in Atom; they consisted of trying different changes to files and the addition of new files in an attempt to troubleshoot the issue._
+_v0.1.1 through 0.1.7 were changes to solve the issue of being unable to view package settings & README in Atom; they consisted of trying different changes to files and the addition of new files in an attempt to troubleshoot the issue._
 
 v0.2.0
 ------

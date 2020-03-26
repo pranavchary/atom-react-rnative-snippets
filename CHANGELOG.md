@@ -19,3 +19,20 @@ v0.2.0
 - Modified React Native core component snippets:
   - Removed the whitespace before the `props` tabstop and added it to the tabstop itself. This allows it to be deleted along with `props` if desired
 - Replaced the new line character after each `console.log()` snippet with a tabstop
+
+v0.3.0
+------
+- **NEW REACT SNIPPETS**
+  - Create and use context
+- **NEW REACT NATIVE SNIPPETS**
+  - Templates for View & ScrollView components with embedded text
+- **NEW JAVASCRIPT SNIPPETS**
+  - Templates for try/catch & try/catch/finally blocks
+  - Templates for one-line & multi-line arrow functions
+  - Template for anonymous keyword function
+  - Template for named keyword function (with const/var/let)
+- Modified the descriptive text for some of the React snippets
+- Modified the React effect hook snippet so that the whitespace became part of the dependencies tabstop
+-  Modified the React Native named import snippet so that `View, Text, Stylesheet` is now part of a tabstop so they can be removed if desired
+- Wrapped values of certain React Native component props in brackets as per typical usage
+- Modified the descriptive text of one of the JavaScript `console.log()` snippets

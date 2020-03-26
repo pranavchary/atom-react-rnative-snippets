@@ -1,17 +1,17 @@
 React & React Native Snippets [![Build Status](https://travis-ci.org/pranavchary/atom-react-rnative-snippets.svg?branch=master)](https://travis-ci.org/pranavchary/atom-react-rnative-snippets)
 ----
 
-An Atom plugin that turns shorthand text into code that is commonly used in React & React Native development. It also contains a few general-purpose JavaScript snippets as well.
+An Atom plugin that turns shorthand text into code that is commonly used in React & React Native development. It also contains a few general-purpose JavaScript snippets as well. Almost every snippet in this package uses ES6 or higher syntax.
 
 ## Description
 Latest snippet count by category is as follows:
  - React Import: 4
  - React Component: 5
  - React Lifecycle: 5
- - React Hooks: 3
- - React Native: 26
- - General-purpose JavaScript: 6
- - Total: **49**
+ - React Hooks: 5
+ - React Native: 28
+ - General-purpose JavaScript: 15
+ - Total: **62**
 
 I would greatly appreciate any suggestions for snippets that aren't yet available for this package, or if any naming conventions appear odd to anyone. My goal is for this package to become a powerful & effective tool for web/mobile application developers.
 
@@ -45,6 +45,8 @@ I would greatly appreciate any suggestions for snippets that aren't yet availabl
  - **rhs:** `const [----, ----] = useState(----);`
  - **rhr:** `const [----, ----] = useReducer(----, { ---- });`
  - **rhe:** `useEffect(() => { ---- }, ----);`
+ - **rccont:** `const ---- = React.createContext({ ---- });`
+ - **rhc:** `const ---- = useContext({ ---- });`
 
 #### React Native Snippet List
  - **eimrn:** `import ---- from 'react-native';`
@@ -62,20 +64,31 @@ I would greatly appreciate any suggestions for snippets that aren't yet availabl
  - **rnntd:** `navigation.toggleDrawer();`
  - **rnv:** `<View ---- >----</View>`
  - **rnvsc:** `<View ---- />`
+ - **rnvt:** `<View ---- ><Text ---- >----</Text></View>`
  - **rnt:** `<Text ---- >----</Text>`
  - **rnimg:** `<Image source={----} ---- />`
- - **rnti:** `<TextInput onChangeText={----} value={----} ---- />`
+ - **rnti:** `<TextInput value={----} onChangeText={----} onEndEditing={----} ---- />`
  - **rnsv:** `<ScrollView ---- >----</ScrollView>`
- - **rnbtn:** `<Button onPress={----} ---- />`
+ - **rnsvt:** `<ScrollView ---- ><Text ---- >----</Text></ScrollView>`
+ - **rnbtn:** `<Button title='----' onPress={----} ---- />`
  - **rnto:** `<TouchableOpacity ---- >----</TouchableOpacity>`
  - **rnpick:** `<Picker selectedValue={----} onValueChange={----} ---- >----</Picker>`
- - **rnpitem:** `<Picker.Item label=---- value=---- />`
+ - **rnpitem:** `<Picker.Item label='----' value={----} />`
  - **rnsw:** `<Switch value={----} onValueChange={----} ---- />`
  - **rnfl:** `<FlatList keyExtractor={----} data={----} renderItem={----} />`
  - **rnsl:** `<SectionList sections={----} keyExtractor={----} renderItem={----} renderSectionHeader={----} />`
 
 #### Misc Snippet List
  - **eim:** `import ---- from '----';`
+ - **enim:** `import { ---- } from '----';`
+ - **tcb:** `try { ----} catch (----) { ---- }`
+ - **tcfb:** `try { ---- } catch (----) { ---- } finally { ---- }`
+ - **olarr:** `const ---- = (----) => ----;`
+ - **arr:** `const ---- = (----) => { ---- }`
+ - **afunc:** `function(----) { ---- }`
+ - **cfunc:** `const ---- = function(----) { ---- }`
+ - **vfunc:** `var ---- = function(----) { ---- }`
+ - **lfunc:** `let ---- = function(----) { ---- }`
  - **log:** `console.log(----);`
  - **logt:** `console.log('----');`
  - **logm:** `console.log('----', ----);`

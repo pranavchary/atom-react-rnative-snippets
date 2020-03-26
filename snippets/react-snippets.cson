@@ -38,23 +38,23 @@
     "body": 'const ${1} = function(${2: props}) {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
 
   # Lifecycle Methods snippets
-  "React: empty constructor":
+  "React: empty constructor template":
     "prefix": "rcon",
     "body": 'constuctor(props) {\n\tsuper(props);\n\t${1}\n}\n'
 
-  "React: constructor with empty state":
+  "React: constructor with empty state template":
     "prefix": "rcons",
     "body": 'constuctor(props) {\n\tsuper(props);\n\tthis.state = {\n\t\t${1}\n\t}\n}\n'
 
-  "React: componentDidMount()":
+  "React: componentDidMount() template":
     "prefix": "rcdm",
     "body": 'componentDidMount(){\n\t${1}\n}\n'
 
-  "React: componentDidUpdate()":
+  "React: componentDidUpdate() template":
     "prefix": "rcdu",
     "body": 'componentDidUpdate(${1:prevProps, prevState}) {\n\t${2}\n}\n'
 
-  "React: componentWillUnmount()":
+  "React: componentWillUnmount() template":
     "prefix": "rcwu",
     "body": 'componentWillUnmount() {\n\t${1}\n}\n'
 
@@ -69,7 +69,15 @@
 
   "React: effect hook":
     "prefix": "rhe",
-    "body": 'useEffect(() => {\n\t${2}\n}, ${1:[]});\n'
+    "body": 'useEffect(() => {\n\t${2}\n},${1: []});\n'
+
+  "React: create context":
+    "prefix": "rccont",
+    "body": "const ${1} = React.createContext({\n\t${2}\n});\n"
+
+  "React: context hook":
+    "prefix": "rhc",
+    "body": "const ${1} = useContext(${2});\n"
 
   # React Native snippets
   "React Native: empty import":
@@ -78,7 +86,7 @@
 
   "React Native: View, Text, StyleSheet import":
     "prefix": "nimrn",
-    "body": "import { View, Text, StyleSheet } from 'react-native';\n"
+    "body": "import { ${1:View, Text, StyleSheet} } from 'react-native';\n"
 
   "React Native: create StyleSheet":
     "prefix": "rncss",
@@ -132,25 +140,33 @@
     "prefix": "rnvsc",
     "body": "<View${1: props} />"
 
+  "React Native: View with embdedded Text":
+    "prefix": "rnvt",
+    "body": "<View${2: viewProps}>\n\t<Text${3: textProps}>${1}</Text>\n</View>"
+
   "React Native: Text":
     "prefix": "rnt",
     "body": "<Text${1: props}>${2}</Text>"
 
   "React Native: Image":
     "prefix": "rnimg",
-    "body": "<Image${2: props} source=${1} />"
+    "body": "<Image${2: props} source={${1}} />"
 
   "React Native: TextInput":
     "prefix": "rnti",
-    "body": "<TextInput value=${1} onChangeText=${2}${3: props} />"
+    "body": "<TextInput value={${1}} onChangeText={${2}} onEndEditing={${3}}${4: props} />"
 
   "React Native: ScrollView":
     "prefix": "rnsv",
     "body": "<ScrollView${1: props}>\n\t${2}\n</ScrollView>"
 
+  "React Native: ScrollView with embdedded Text":
+    "prefix": "rnsvt",
+    "body": "<ScrollView${2: viewProps}>\n\t<Text${3: textProps}>${1}</Text>\n</ScrollView>"
+
   "React Native: Button":
     "prefix": "rnbtn",
-    "body": "<Button title=${1} onPress=${2}${3: props} />"
+    "body": "<Button title='${1}' onPress={${2}}${3: props} />"
 
   "React Native: TouchableOpacity":
     "prefix": "rnto",
@@ -162,7 +178,7 @@
 
   "React Native: Picker.Item":
     "prefix": "rnpitem",
-    "body": "<Picker.Item label=${1} value=${2} />"
+    "body": "<Picker.Item label='${1}' value={${2}} />"
 
   "React Native: Switch":
     "prefix": "rnsw",
@@ -185,6 +201,38 @@
     "prefix": "enim",
     "body": "import { ${1} } from '${2}';\n"
 
+  "JavaScript: try/catch":
+    "prefix": "tcb",
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n}\n"
+
+  "JavaScript: try/catch/finally":
+    "prefix": "tcfb",
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n} finally {\n\t${4}\n}\n"
+
+  "JavaScript: one-line arrow function template":
+    "prefix": "olarr",
+    "body": "const ${1} = (${2}) => ${3}"
+
+  "JavaScript: arrow function template":
+    "prefix": "arr",
+    "body": "const ${1} = (${2}) => {\n\t${3}\n}"
+
+  "JavaScript: anonymous keyword function template":
+    "prefix": "afunc",
+    "body": "function (${1}) {\n\t${2}\n}"
+
+  "JavaScript: 'const' keyword function template":
+    "prefix": "cfunc",
+    "body": "const ${1} = function (${2}) {\n\t${3}\n}"
+
+  "JavaScript: 'var' keyword function template":
+    "prefix": "vfunc",
+    "body": "var ${1} = function (${2}) {\n\t${3}\n}"
+
+  "JavaScript: 'let' keyword function template":
+    "prefix": "lfunc",
+    "body": "let ${1} = function (${2}) {\n\t${3}\n}"
+
   "JavaScript: console log":
     "prefix": "log",
     "body": "console.log(${1});${2}"
@@ -193,7 +241,7 @@
     "prefix": "logt",
     "body": "console.log('${1}');${2}"
 
-  "JavaScript: console log (multi)":
+  "JavaScript: console log (text & object)":
     "prefix": "logm",
     "body": "console.log('${1}', ${2});${3}"
 

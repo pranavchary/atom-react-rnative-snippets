@@ -31,20 +31,20 @@
 
   "React: functional component skeleton":
     "prefix": "rfc",
-    "body": 'const ${1} = (${2: props}) => {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
+    "body": 'const ${1} = (${2:props}) => {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
 
   "React: functional component skeleton (keyword)":
     "prefix": "rfcf",
-    "body": 'const ${1} = function(${2: props}) {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
+    "body": 'const ${1} = function(${2:props}) {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
 
   # Lifecycle Methods snippets
   "React: empty constructor template":
     "prefix": "rcon",
-    "body": 'constuctor(props) {\n\tsuper(props);\n\t${1}\n}\n'
+    "body": 'constructor(props) {\n\tsuper(props);\n\t${1}\n}\n'
 
   "React: constructor with empty state template":
     "prefix": "rcons",
-    "body": 'constuctor(props) {\n\tsuper(props);\n\tthis.state = {\n\t\t${1}\n\t}\n}\n'
+    "body": 'constructor(props) {\n\tsuper(props);\n\tthis.state = {\n\t\t${1}\n\t}\n}\n'
 
   "React: componentDidMount() template":
     "prefix": "rcdm",
@@ -94,7 +94,7 @@
 
   "React Native: navigation - navigate":
     "prefix": "rnnnav",
-    "body": "props.navigation.navigate(${1:routeName},${2: params});"
+    "body": "props.navigation.navigate(${1:routeName}${2:, params});"
 
   "React Native: navigation - go back":
     "prefix": "rnngb",
@@ -102,7 +102,7 @@
 
   "React Native: navigation - push":
     "prefix": "rnnpush",
-    "body": "props.navigation.push(${1:routeName},${2: params});"
+    "body": "props.navigation.push(${1:routeName}${2:, params});"
 
   "React Native: navigation - pop":
     "prefix": "rnnpop",
@@ -114,11 +114,11 @@
 
   "React Native: navigation - replace":
     "prefix": "rnnrep",
-    "body": "props.navigation.replace(${1:routeName},${2: params});"
+    "body": "props.navigation.replace(${1:routeName}${2:, params});"
 
   "React Native: navigation - jumpTo":
     "prefix": "rnnjt",
-    "body": "props.navigation.jumpTo(${1:routeName},${2: params});"
+    "body": "props.navigation.jumpTo(${1:routeName}${2:, params});"
 
   "React Native: navigation - open drawer":
     "prefix": "rnnd",
@@ -142,7 +142,7 @@
 
   "React Native: View with embdedded Text":
     "prefix": "rnvt",
-    "body": "<View${2: viewProps}>\n\t<Text${3: textProps}>${1}</Text>\n</View>"
+    "body": "<View${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</View>"
 
   "React Native: Text":
     "prefix": "rnt",
@@ -162,7 +162,7 @@
 
   "React Native: ScrollView with embdedded Text":
     "prefix": "rnsvt",
-    "body": "<ScrollView${2: viewProps}>\n\t<Text${3: textProps}>${1}</Text>\n</ScrollView>"
+    "body": "<ScrollView${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</ScrollView>"
 
   "React Native: Button":
     "prefix": "rnbtn",

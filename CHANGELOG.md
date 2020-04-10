@@ -36,3 +36,9 @@ v0.3.0
 -  Modified the React Native named import snippet so that `View, Text, Stylesheet` is now part of a tabstop so they can be removed if desired
 - Wrapped values of certain React Native component props in brackets as per typical usage
 - Modified the descriptive text of one of the JavaScript `console.log()` snippets
+
+v0.3.1
+------
+- Fixed a spelling mistake in the React component constructor Snippets
+- Moved the comma in navigation functions into the tabstop for params (React Native snippets)
+- Changed the tabstop order for View with embedded Text and ScrollView with embedded Text in React Native snippets

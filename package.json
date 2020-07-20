@@ -1,6 +1,6 @@
 {
   "name": "react-rnative-snippets",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "React and React Native snippets for Atom",
   "main": "./lib/react-rnative-snippets",
   "repository": {

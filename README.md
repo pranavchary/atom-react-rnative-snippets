@@ -41,13 +41,16 @@ I would greatly appreciate any suggestions for snippets that aren't yet availabl
  - **rcmd:** `componentDidMount() { ---- }`
  - **rcdu:** `componentDidUpdate(----) { ---- }`
  - **rcwu:** `componentWillUnmount() { ---- }`
+ - **rcwm:** `UNSAFE_componentWillMount() { ---- }`
+ - **rcwrp:** `UNSAFE_componentWillReceiveProps() { ---- }`
 
 #### React Hooks Snippet List
  - **rhs:** `const [----, ----] = useState(----);`
  - **rhr:** `const [----, ----] = useReducer(----, { ---- });`
  - **rhe:** `useEffect(() => { ---- }, ----);`
  - **rccont:** `const ---- = React.createContext({ ---- });`
- - **rhc:** `const ---- = useContext({ ---- });`
+ - **rhc:** `const ---- = useContext(----);`
+ - **rhref:** `const ---- = useRef(----);`
 
 #### React Native Snippet List
  - **eimrn:** `import ---- from 'react-native';`
@@ -76,20 +79,28 @@ I would greatly appreciate any suggestions for snippets that aren't yet availabl
  - **rnpick:** `<Picker selectedValue={----} onValueChange={----} ---- >----</Picker>`
  - **rnpitem:** `<Picker.Item label='----' value={----} />`
  - **rnsw:** `<Switch value={----} onValueChange={----} ---- />`
- - **rnfl:** `<FlatList keyExtractor={----} data={----} renderItem={----} />`
- - **rnsl:** `<SectionList sections={----} keyExtractor={----} renderItem={----} renderSectionHeader={----} />`
+ - **rnfl:** `<FlatList keyExtractor={----} data={----} renderItem={----} ---- />`
+ - **rnsl:** `<SectionList sections={----} keyExtractor={----} renderItem={----} renderSectionHeader={----} ---- />`
 
 #### Misc Snippet List
  - **eim:** `import ---- from '----';`
  - **enim:** `import { ---- } from '----';`
  - **tcb:** `try { ----} catch (----) { ---- }`
  - **tcfb:** `try { ---- } catch (----) { ---- } finally { ---- }`
- - **olarr:** `const ---- = (----) => ----;`
+ - **aolarr:** `(----) => ----`
+ - **olarr:** `const ---- = (----) => ----`
+ - **volarr:** `var ---- = (----) => ----`
+ - **lolarr:** `let ---- = (----) => ----`
  - **arr:** `const ---- = (----) => { ---- }`
+ - **varr:** `var ---- = (----) => { ---- }`
+ - **larr:** `let ---- = (----) => { ---- }`
  - **afunc:** `function(----) { ---- }`
- - **cfunc:** `const ---- = function(----) { ---- }`
+ - **func:** `const ---- = function(----) { ---- }`
  - **vfunc:** `var ---- = function(----) { ---- }`
  - **lfunc:** `let ---- = function(----) { ---- }`
+ - **destr:** `const { ---- } = ----;`
+ - **vdestr:** `var { ---- } = ----;`
+ - **ldestr:** `let { ---- } = ----;`
  - **log:** `console.log(----);`
  - **logt:** `console.log('----');`
  - **logm:** `console.log('----', ----);`

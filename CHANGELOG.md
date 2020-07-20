@@ -1,6 +1,6 @@
 ### atom-react-rnative-snippets Changelog
 
-v1.0.0
+v2.0.0 (actually v1.0.0 - misabled due to a versioning error on my end)
 - **NEW REACT SNIPPETS**
 	- `componentWillMount` & `componentWillReceiveProps` lifecycle methods (prefixed by `UNSAFE_` tabstop for React 16.9.0+)
 	- `useRef` hook

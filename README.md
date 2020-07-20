@@ -7,11 +7,12 @@ An Atom plugin that turns shorthand text into code that is commonly used in Reac
 Latest snippet count by category is as follows:
  - React Import: 4
  - React Component: 5
- - React Lifecycle: 5
- - React Hooks: 5
+ - React Lifecycle: 7
+ - React Hooks: 1
+ - React Props: 2
  - React Native: 28
- - General-purpose JavaScript: 15
- - Total: **62**
+ - General-purpose JavaScript: 6
+ - Total: **73**
 
 I would greatly appreciate any suggestions for snippets that aren't yet available for this package, or if any naming conventions appear odd to anyone. My goal is for this package to become a powerful & effective tool for web/mobile application developers.
 

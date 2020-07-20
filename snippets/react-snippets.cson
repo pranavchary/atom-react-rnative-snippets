@@ -1,22 +1,22 @@
 ".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
-  # React Import snippets
+  # React: Import snippets
   "React: empty import":
     "prefix": "eimr",
-    "body": "import ${1} from 'react';\n"
+    "body": 'import ${1} from \'react\';\n'
 
   "React: empty named import from 'react'":
     "prefix": "enimr",
-    "body": "import { ${1} } from 'react';\n"
+    "body": 'import { ${1} } from \'react\';\n'
 
   "React: import React":
     "prefix": "imr",
-    "body": "import React from 'react';\n"
+    "body": 'import React from \'react\';\n'
 
   "React: import React & empty named":
     "prefix": "imrn",
-    "body": "import React, { ${1:Component} } from 'react';\n"
+    "body": 'import React, { ${1:Component} } from \'react\';\n'
 
-  # React Component snippets
+  # React: Component snippets
   "React: createClass skeleton":
     "prefix": "rcc",
     "body": 'const ${1} = React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${2}\n\t\t);\n\t}\n});\n\nexport default ${1};\n'
@@ -37,7 +37,7 @@
     "prefix": "rfcf",
     "body": 'const ${1} = function(${2:props}) {\n\n\treturn (\n\t\t${3}\n\t);\n}\n\nexport default ${1};\n'
 
-  # Lifecycle Methods snippets
+  # React: Lifecycle method snippets
   "React: empty constructor template":
     "prefix": "rcon",
     "body": 'constructor(props) {\n\tsuper(props);\n\t${1}\n}\n'
@@ -58,10 +58,18 @@
     "prefix": "rcwu",
     "body": 'componentWillUnmount() {\n\t${1}\n}\n'
 
-  # React Hooks snippets
+	"React: componentWillMount() template":
+		"prefix": "rcwm",
+		"body": '${1:UNSAFE_}componentWillMount {\n\t${2}\n}\n'
+
+	"React: componentWillReceiveProps() template":
+		"prefix": "rcwrp",
+		"body": '${1:UNSAFE_}componentWillReceiveProps(${2:nextProps, nextState}) {\n\t${3}\n}\n'
+
+  # React: Hooks snippets
   "React: state hook":
     "prefix": "rhs",
-    "body": 'const [${1}, ${2}] = useState(${3});\n'
+    "body": 'const [${1:value}, set${2:setValue}] = useState(${3:initialValue});\n'
 
   "React: reducer hook":
     "prefix": "rhr",
@@ -69,7 +77,7 @@
 
   "React: effect hook":
     "prefix": "rhe",
-    "body": 'useEffect(() => {\n\t${2}\n},${1: []});\n'
+    "body": 'useEffect(() => {\n\t${2}\n}, ${1:[]});\n'
 
   "React: create context":
     "prefix": "rccont",
@@ -79,176 +87,221 @@
     "prefix": "rhc",
     "body": "const ${1} = useContext(${2});\n"
 
+	"React: ref hook":
+		"prefix": "rhref",
+		"body": 'const ${1} = useRef(${2:initialValue});\n'
+
+	# React: Props snippets
+	"React: default props":
+		"prefix": "rdprops",
+		"body": '${1:ComponentName}.defaultProps = {\n\t${2}\n}\n'
+
+	"React: prop types":
+		"prefix": "rpropt",
+		"body": '${1:ComponentName}.propTypes = {\n\t${2}\n}\n'
+
   # React Native snippets
   "React Native: empty import":
     "prefix": "eimrn",
-    "body": "import ${1} from 'react-native';\n"
+    "body": 'import ${1} from \'react-native\';\n'
 
-  "React Native: View, Text, StyleSheet import":
+  "React Native: named import":
     "prefix": "nimrn",
-    "body": "import { ${1:View, Text, StyleSheet} } from 'react-native';\n"
+    "body": 'import { ${1:View, Text, StyleSheet} } from \'react-native\';\n'
 
   "React Native: create StyleSheet":
     "prefix": "rncss",
-    "body": "const styles = StyleSheet.create({\n\t${1}\n});\n"
+    "body": 'const styles = StyleSheet.create({\n\t${1}\n});\n'
 
   "React Native: navigation - navigate":
     "prefix": "rnnnav",
-    "body": "props.navigation.navigate(${1:routeName}${2:, params});"
+    "body": 'props.navigation.navigate(${1:routeName}${2:, params});'
 
   "React Native: navigation - go back":
     "prefix": "rnngb",
-    "body": "props.navigation.goBack();"
+    "body": 'props.navigation.goBack();'
 
   "React Native: navigation - push":
     "prefix": "rnnpush",
-    "body": "props.navigation.push(${1:routeName}${2:, params});"
+    "body": 'props.navigation.push(${1:routeName}${2:, params});'
 
   "React Native: navigation - pop":
     "prefix": "rnnpop",
-    "body": "props.navigation.pop(${1});"
+    "body": 'props.navigation.pop(${1});'
 
   "React Native: navigation - pop to top":
     "prefix": "rnnptt",
-    "body": "props.navigation.popToTop();"
+    "body": 'props.navigation.popToTop();'
 
   "React Native: navigation - replace":
     "prefix": "rnnrep",
-    "body": "props.navigation.replace(${1:routeName}${2:, params});"
+    "body": 'props.navigation.re place(${1:r out eName}${2: , params});'
 
   "React Native: navigation - jumpTo":
     "prefix": "rnnjt",
-    "body": "props.navigation.jumpTo(${1:routeName}${2:, params});"
+    "body": 'props.navigation.jumpTo(${1:routeName}${2:, params});'
 
   "React Native: navigation - open drawer":
     "prefix": "rnnd",
-    "body": "props.navigation.openDrawer();"
+    "body": 'props.navigation.openDrawer();'
 
   "React Native: navigation - close drawer":
     "prefix": "rnnd",
-    "body": "props.navigation.closeDrawer();"
+    "body": 'props.navigation.closeDrawer();'
 
   "React Native: navigation - toggle drawer":
     "prefix": "rnnd",
-    "body": "props.navigation.toggleDrawer();"
+    "body": 'props.navigation.toggleDrawer();'
 
   "React Native: View":
     "prefix": "rnv",
-    "body": "<View${1: props}>\n\t${2}\n</View>"
+    "body": '<View${1: props}>\n\t${2}\n</View>'
 
   "React Native: View (self-closing)":
     "prefix": "rnvsc",
-    "body": "<View${1: props} />"
+    "body": '<View${1: props} />'
 
   "React Native: View with embdedded Text":
     "prefix": "rnvt",
-    "body": "<View${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</View>"
+    "body": '<View${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</View>'
 
   "React Native: Text":
     "prefix": "rnt",
-    "body": "<Text${1: props}>${2}</Text>"
+    "body": '<Text${1: props}>${2}</Text>'
 
   "React Native: Image":
     "prefix": "rnimg",
-    "body": "<Image${2: props} source={${1}} />"
+    "body": '<Image${2: props} source={${1}} />'
 
   "React Native: TextInput":
     "prefix": "rnti",
-    "body": "<TextInput value={${1}} onChangeText={${2}} onEndEditing={${3}}${4: props} />"
+    "body": '<TextInput value={${1}} onChangeText={${2}} onEndEditing={${3}}${4: props} />'
 
   "React Native: ScrollView":
     "prefix": "rnsv",
-    "body": "<ScrollView${1: props}>\n\t${2}\n</ScrollView>"
+    "body": '<ScrollView${1: props}>\n\t${2}\n</ScrollView>'
 
   "React Native: ScrollView with embdedded Text":
     "prefix": "rnsvt",
-    "body": "<ScrollView${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</ScrollView>"
+    "body": '<ScrollView${1: viewProps}>\n\t<Text${2: textProps}>${3}</Text>\n</ScrollView>'
 
   "React Native: Button":
     "prefix": "rnbtn",
-    "body": "<Button title='${1}' onPress={${2}}${3: props} />"
+    "body": '<Button title=\'${1}\' onPress={${2}}${3: props} />'
 
   "React Native: TouchableOpacity":
     "prefix": "rnto",
-    "body": "<TouchableOpacity${1: props}>\n\t${2}\n</TouchableOpacity>"
+    "body": '<TouchableOpacity${1: props}>\n\t${2}\n</TouchableOpacity>'
 
   "React Native: Picker":
     "prefix": "rnpick",
-    "body": "<Picker selectedValue={${1}} onValueChange={${2}}${3: props}>\n\t${4}\n</Picker>"
+    "body": '<Picker selectedValue={${1}} onValueChange={${2}}${3: props}>\n\t${4}\n</Picker>'
 
   "React Native: Picker.Item":
     "prefix": "rnpitem",
-    "body": "<Picker.Item label='${1}' value={${2}} />"
+    "body": '<Picker.Item label=\'${1}\' value={${2}} />'
 
   "React Native: Switch":
     "prefix": "rnsw",
-    "body": "<Switch value={${1}} onValueChange={${2}}${3: props} />"
+    "body": '<Switch value={${1}} onValueChange={${2}}${3: props} />'
 
   "React Native: FlatList":
     "prefix": "rnfl",
-    "body": "<FlatList\n\tkeyExtractor={${1}}\n\tdata={${2}}\n\trenderItem={${3}}\n\t${4:props}\n/>"
+    "body": '<FlatList\n\tkeyExtractor={${1}}\n\tdata={${2}}\n\trenderItem={${3}}\n\t${4: props}\n/>'
 
   "React Native: SectionList":
     "prefix": "rnsl",
-    "body": "<SectionList\n\tsections={${1}}\n\tkeyExtractor={${2}}\n\trenderItem={${3}}\n\trenderSectionHeader={${4}}\n\t${5:props}\n/>"
+    "body": '<SectionList\n\tsections={${1}}\n\tkeyExtractor={${2}}\n\trenderItem={${3}}\n\trenderSectionHeader={${4}}\n\t${5: props}\n/>'
 
-  # Misc Snippets
+  # JavaScript Snippets
   "JavaScript: empty import":
     "prefix": "eim",
-    "body": "import ${1} from '${2}';\n"
+    "body": 'import ${1} from \'${2}\';\n'
 
   "JavaScript: empty named import":
     "prefix": "enim",
-    "body": "import { ${1} } from '${2}';\n"
+    "body": 'import { ${1} } from \'${2}\';\n'
 
   "JavaScript: try/catch":
     "prefix": "tcb",
-    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n}\n"
+    "body": 'try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n}\n'
 
   "JavaScript: try/catch/finally":
     "prefix": "tcfb",
-    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n} finally {\n\t${4}\n}\n"
+    "body": 'try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n} finally {\n\t${4}\n}\n'
 
-  "JavaScript: one-line arrow function template":
+	"JavaScript: anonymous one-line arrow function template":
+    "prefix": "aolarr",
+    "body": '(${1}) => ${2}\n'
+
+  "JavaScript: 'const' one-line arrow function template":
     "prefix": "olarr",
-    "body": "const ${1} = (${2}) => ${3}"
+    "body": 'const ${1} = (${2}) => ${3}'
 
-  "JavaScript: arrow function template":
+	"JavaScript: 'var' one-line arrow function template":
+    "prefix": "volarr",
+    "body": 'var ${1} = (${2}) => ${3}'
+
+	"JavaScript: 'let' one-line arrow function template":
+    "prefix": "lolarr",
+    "body": 'let ${1} = (${2}) => ${3}'
+
+  "JavaScript: 'const' arrow function template":
     "prefix": "arr",
-    "body": "const ${1} = (${2}) => {\n\t${3}\n}"
+    "body": 'const ${1} = (${2}) => {\n\t${3}\n}'
+
+	"JavaScript: 'var' arrow function template":
+    "prefix": "varr",
+    "body": 'var ${1} = (${2}) => {\n\t${3}\n}'
+
+	"JavaScript: 'let' arrow function template":
+    "prefix": "larr",
+    "body": 'let ${1} = (${2}) => {\n\t${3}\n}'
 
   "JavaScript: anonymous keyword function template":
     "prefix": "afunc",
-    "body": "function (${1}) {\n\t${2}\n}"
+    "body": 'function (${1}) {\n\t${2}\n}'
 
   "JavaScript: 'const' keyword function template":
-    "prefix": "cfunc",
-    "body": "const ${1} = function (${2}) {\n\t${3}\n}"
+    "prefix": "func",
+    "body": 'const ${1} = function (${2}) {\n\t${3}\n}'
 
   "JavaScript: 'var' keyword function template":
     "prefix": "vfunc",
-    "body": "var ${1} = function (${2}) {\n\t${3}\n}"
+    "body": 'var ${1} = function (${2}) {\n\t${3}\n}'
 
   "JavaScript: 'let' keyword function template":
     "prefix": "lfunc",
-    "body": "let ${1} = function (${2}) {\n\t${3}\n}"
+    "body": 'let ${1} = function (${2}) {\n\t${3}\n}'
+
+	"JavaScript: destructure object":
+		"prefix": "destr"
+		"body": 'const { ${1} } = ${2};\n'
+
+	"JavaScript: 'var' destructure object":
+		"prefix": "vdestr"
+		"body": 'var { ${1} } = ${2};\n'
+
+	"JavaScript: 'let' destructure object":
+		"prefix": "ldestr"
+		"body": 'let { ${1} } = ${2};\n'
 
   "JavaScript: console log":
     "prefix": "log",
-    "body": "console.log(${1});${2}"
+    "body": 'console.log(${1});${2}'
 
   "JavaScript: console log (text)":
     "prefix": "logt",
-    "body": "console.log('${1}');${2}"
+    "body": 'console.log(\'${1}\');${2}'
 
   "JavaScript: console log (text & object)":
     "prefix": "logm",
-    "body": "console.log('${1}', ${2});${3}"
+    "body": 'console.log(\'${1}\', ${2});${3}'
 
   "JavaScript: export default":
     "prefix": "exdef",
-    "body": "export default ${1};"
+    "body": 'export default ${1};'
 
   "JavaScript: export module":
     "prefix": "modexp",
-    "body": "module.exports = ${1};"
+    "body": 'module.exports = ${1};'
